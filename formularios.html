@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Etiquetas de formularios</title>
+</head>
+<body class="container py-4">
+    <!-- header, h1 y a presentan el tema de la página y agregan navegación de regreso al inicio. -->
+    <header class="mb-4">
+        <h1 class="alert alert-warning">Etiquetas relacionadas con formularios</h1>
+        <a class="btn btn-secondary" href="index.html">Volver al inicio</a>
+    </header>
+
+    <!-- form agrupa todos los controles del formulario; fieldset y legend organizan los datos por secciones. -->
+    <form class="border rounded p-4 bg-light">
+        <fieldset class="mb-4">
+            <legend>Datos personales</legend>
+
+            <!-- label describe el campo e input permite ingresar datos de distintos tipos. -->
+            <div class="mb-3">
+                <label class="form-label" for="nombre">Nombre completo</label>
+                <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="correo">Correo electrónico</label>
+                <input class="form-control" type="email" id="correo" name="correo" placeholder="nombre@correo.com">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="edad">Edad</label>
+                <input class="form-control" type="number" id="edad" name="edad" min="16" max="99">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="nacimiento">Fecha de nacimiento</label>
+                <input class="form-control" type="date" id="nacimiento" name="nacimiento">
+            </div>
+        </fieldset>
+
+        <fieldset class="mb-4">
+            <legend>Preferencias</legend>
+
+            <!-- select crea una lista desplegable y option define cada alternativa seleccionable. -->
+            <div class="mb-3">
+                <label class="form-label" for="lenguaje">Lenguaje favorito</label>
+                <select class="form-select" id="lenguaje" name="lenguaje">
+                    <option value="">Elegí una opción</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <!-- textarea permite escribir textos largos en varias líneas. -->
+            <div class="mb-3">
+                <label class="form-label" for="comentarios">Comentarios</label>
+                <textarea class="form-control" id="comentarios" name="comentarios" rows="4" placeholder="Contanos qué tema te interesa aprender"></textarea>
+            </div>
+
+            <!-- input radio permite elegir una sola opción dentro de un grupo. -->
+            <div class="mb-3">
+                <p class="mb-2">Turno preferido</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="manana" name="turno" value="manana">
+                    <label class="form-check-label" for="manana">Mañana</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="tarde" name="turno" value="tarde">
+                    <label class="form-check-label" for="tarde">Tarde</label>
+                </div>
+            </div>
+
+            <!-- input checkbox permite seleccionar varias opciones al mismo tiempo. -->
+            <div class="mb-3">
+                <p class="mb-2">Temas que te interesan</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="tema-html" name="temas" value="html">
+                    <label class="form-check-label" for="tema-html">Estructura con HTML</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="tema-css" name="temas" value="css">
+                    <label class="form-check-label" for="tema-css">Diseño con CSS</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="tema-js" name="temas" value="javascript">
+                    <label class="form-check-label" for="tema-js">Interactividad con JavaScript</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="mb-4">
+            <legend>Controles adicionales</legend>
+
+            <!-- datalist sugiere opciones para un input sin obligar a elegir una sola de la lista. -->
+            <div class="mb-3">
+                <label class="form-label" for="navegador">Navegador que usás</label>
+                <input class="form-control" list="lista-navegadores" id="navegador" name="navegador" placeholder="Escribí o elegí un navegador">
+                <datalist id="lista-navegadores">
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                    <option value="Edge"></option>
+                    <option value="Opera"></option>
+                </datalist>
+            </div>
+
+            <!-- output puede mostrar un resultado calculado o informativo dentro del formulario. -->
+            <div class="mb-3">
+                <label class="form-label" for="nivel">Nivel de satisfacción</label>
+                <input class="form-range" type="range" id="nivel" name="nivel" min="0" max="10" value="7">
+                <output>Valor inicial: 7 sobre 10</output>
+            </div>
+        </fieldset>
+
+        <!-- button crea acciones del formulario, como enviar o restablecer los datos cargados. -->
+        <div class="d-flex gap-2">
+            <button class="btn btn-primary" type="submit">Enviar formulario</button>
+            <button class="btn btn-outline-secondary" type="reset">Limpiar datos</button>
+        </div>
+    </form>
+
+    <!-- La etiqueta a crea un enlace al final de la página para regresar nuevamente al index. -->
+    <p class="mt-4">
+        <a class="btn btn-secondary" href="index.html">Volver al inicio</a>
+    </p>
+</body>
+</html>
