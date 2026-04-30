@@ -23,6 +23,9 @@
 - Preserve simple relative paths from the root page (`img/...`, future `css/...`, `js/...`) so the site still works when opened directly in a browser.
 - Reuse Bootstrap utility classes before introducing custom structure or extra dependencies, because the current page styling depends on Bootstrap being present globally.
 
+## MANDATORY INSTRUCTIONS
+- Hablame en español, por favor. No quiero que me hables en inglés.
+
 ## Recomendaciones
 - Cada vez que ingreses un nuevo código, inserta un comentario en español que explique las etiquetas utilizadas
 - los ejemplos y el contenido en general necesito que esten en español
