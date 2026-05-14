@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Sitio web Alejandro</title>
 </head>
 <body class="container py-4">
-    <h1 class="alert alert-info">Bienvenidos a mi sitio web</h1>
-    <hr/>
     
+    <h1 class="alert alert-info">Bienvenidos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a mi sitio web</h1>
+    <hr/>
+    <div>
     <p>soy Alejandro y en este sitio web probare diferentes <span class="btn btn-dark">tecnologías web.</span></p>
     <marquee>muy pronto veremos más contenido</marquee>
-    
+    </div>
     <img class="img-thumbnail" src="img/riverplate.webp" width="150px" alt="River Plate">
     
     
@@ -31,60 +33,57 @@
         <a href="https://www.google.com" target="_top">Ir a Google</a>
     </p>
 
-    <!-- La etiqueta table organiza datos en filas y columnas; thead agrupa los encabezados; tbody contiene los datos; tr define cada fila; th los títulos de columna y td cada celda de información. -->
+    <!-- La etiqueta table organiza datos en filas y columnas; tr define cada fila; th los títulos de columna; td cada celda de información y rowspan permite que una celda ocupe varias filas. -->
     <table class="table table-dark table-striped mt-4">
-        <thead>
-            <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">Dirección</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ale</td>
-                <td><a class="link-light" href="https://aleramirezsj.github.io/ingenieriaII-2026/" target="_blank">https://aleramirezsj.github.io/ingenieriaII-2026/</a></td>
-            </tr>
-            <tr>
-                <td>Shaiel</td>
-                <td><a class="link-light" href="https://shaielvera.github.io/Ingenieria-II-/" target="_blank">https://shaielvera.github.io/Ingenieria-II-/</a></td>
-            </tr>
-            <tr>
-                <td>Juan Pablo</td>
-                <td><a class="link-light" href="https://jpinformaticaok.github.io/Ingenieria2" target="_blank">https://jpinformaticaok.github.io/Ingenieria2</a></td>
-            </tr>
-            <tr>
-                <td>Bauti</td>
-                <td><a class="link-light" href="https://bsjgomezz.github.io/IngenieriaII/" target="_blank">https://bsjgomezz.github.io/IngenieriaII/</a></td>
-            </tr>
-            <tr>
-                <td>Nico</td>
-                <td><a class="link-light" href="https://nicokz7.github.io/IngSoft2/" target="_blank">https://nicokz7.github.io/IngSoft2/</a></td>
-            </tr>
-            <tr>
-                <td>Loana</td>
-                <td><a class="link-light" href="https://loa-fitdev.github.io/Pag_web_2do_TSDS/" target="_blank">https://loa-fitdev.github.io/Pag_web_2do_TSDS/</a></td>
-            </tr>
-            <tr>
-                <td>Enzo</td>
-                <td><a class="link-light" href="https://enzo-dc-sj.github.io/ingenieria2/" target="_blank">https://enzo-dc-sj.github.io/ingenieria2/</a></td>
-            </tr>
-            <tr>
-                <td>Aquiles</td>
-                <td><a class="link-light" href="https://fusteraquiles-cyber.github.io/Ingenieria2/" target="_blank">https://fusteraquiles-cyber.github.io/Ingenieria2/</a></td>
-            </tr>
-            <tr>
-                <td>Marcelo</td>
-                <td><a class="link-light" href="https://marcesj.github.io/IngenieriaII/" target="_blank">https://marcesj.github.io/IngenieriaII/</a></td>
-            </tr>
-            <tr>
-                <td>Sofia</td>
-                <td><a class="link-light" href="https://sofiamellano.github.io/ingenieriaII-2026/" target="_blank">https://sofiamellano.github.io/ingenieriaII-2026/</a></td>
-            </tr>
-            <tr>
-                <td>Maria Jose</td>
-                <td><a class="link-light" href="https://majosj-png.github.io/Ingenieria2/" target="_blank">https://majosj-png.github.io/Ingenieria2/</a></td>
-            </tr>
-        </tbody>
+        <tr>
+            <td rowspan="12" class="text-center align-middle fw-bold">ISP20</td>
+            <th scope="col">Nombre</th>
+            <th scope="col">Dirección</th>
+        </tr>
+        <tr>
+            <td>Ale</td>
+            <td><a class="link-light" href="https://aleramirezsj.github.io/ingenieriaII-2026/" target="_blank">https://aleramirezsj.github.io/ingenieriaII-2026/</a></td>
+        </tr>
+        <tr>
+            <td>Shaiel</td>
+            <td><a class="link-light" href="https://shaielvera.github.io/Ingenieria-II-/" target="_blank">https://shaielvera.github.io/Ingenieria-II-/</a></td>
+        </tr>
+        <tr>
+            <td>Juan Pablo</td>
+            <td><a class="link-light" href="https://jpinformaticaok.github.io/Ingenieria2" target="_blank">https://jpinformaticaok.github.io/Ingenieria2</a></td>
+        </tr>
+        <tr>
+            <td>Bauti</td>
+            <td><a class="link-light" href="https://bsjgomezz.github.io/IngenieriaII/" target="_blank">https://bsjgomezz.github.io/IngenieriaII/</a></td>
+        </tr>
+        <tr>
+            <td>Nico</td>
+            <td><a class="link-light" href="https://nicokz7.github.io/IngSoft2/" target="_blank">https://nicokz7.github.io/IngSoft2/</a></td>
+        </tr>
+        <tr>
+            <td>Loana</td>
+            <td><a class="link-light" href="https://loa-fitdev.github.io/Pag_web_2do_TSDS/" target="_blank">https://loa-fitdev.github.io/Pag_web_2do_TSDS/</a></td>
+        </tr>
+        <tr>
+            <td>Enzo</td>
+            <td><a class="link-light" href="https://enzo-dc-sj.github.io/ingenieria2/" target="_blank">https://enzo-dc-sj.github.io/ingenieria2/</a></td>
+        </tr>
+        <tr>
+            <td>Aquiles</td>
+            <td><a class="link-light" href="https://fusteraquiles-cyber.github.io/Ingenieria2/" target="_blank">https://fusteraquiles-cyber.github.io/Ingenieria2/</a></td>
+        </tr>
+        <tr>
+            <td>Marcelo</td>
+            <td><a class="link-light" href="https://marcesj.github.io/IngenieriaII/" target="_blank">https://marcesj.github.io/IngenieriaII/</a></td>
+        </tr>
+        <tr>
+            <td>Sofia</td>
+            <td><a class="link-light" href="https://sofiamellano.github.io/ingenieriaII-2026/" target="_blank">https://sofiamellano.github.io/ingenieriaII-2026/</a></td>
+        </tr>
+        <tr>
+            <td>Maria Jose</td>
+            <td><a class="link-light" href="https://majosj-png.github.io/Ingenieria2/" target="_blank">https://majosj-png.github.io/Ingenieria2/</a></td>
+        </tr>
     </table>
     
 </body>
